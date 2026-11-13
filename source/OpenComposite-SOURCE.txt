@@ -1,0 +1,10 @@
+OpenComposite (GPLv3) by ZNix and contributors
+Source: https://gitlab.com/znixian/OpenOVR
+
+The DLLs in ..\OpenComposite are unmodified official builds of the openxr branch from the
+OpenComposite build server. OpenComposite-source.zip is the source of that branch at commit
+cff07db75c4823afe93ed7027b03d5f7bc86f164 (Mon Jul 21 14:47:56 2025 -0400), taken alongside the builds.
+Its submodules are not inside the zip; they are fetched by the repository at these commits:
+bf71a834948186f4097caa076cd2663c69a10e1e libs/glm
+f27f6a860335fc6c8107702dbde4b215ea74b164 libs/libunwind
+91a8a8d9d70f4b469bca0726122c3b5a6096010e libs/openxr-sdk

@@ -2,11 +2,16 @@
 
 **Run 32-bit VR games and mods on your headset's native 64-bit OpenXR runtime. No SteamVR needed.**
 
+<img width="1584" height="672" alt="22" src="https://github.com/user-attachments/assets/af1884c5-9930-47f0-b024-8d093b4604f7" />
+
+
+
 ```
 32-bit game ─► OpenComposite (SteamVR games) ─► xrbridge32.dll ─► xrbridge_host.exe (64-bit) ─► your runtime
 ```
 
 ---
+<img width="1063" height="877" alt="3334" src="https://github.com/user-attachments/assets/e235c65a-39d9-4cff-bbdc-fcf22284e1cf" />
 
 ## 🚀 Quick start
 
@@ -94,7 +99,6 @@ The OpenXR loader hides the real error, so check Setup's **Offered to 32-bit gam
 - A layer that a game or mod switches off for itself (Dishonored VR, AC Unity VR) still loads
   in the host, where the reason doesn't apply. Switch-offs set in Windows' environment
   settings are kept; `XRB_KEEP_LAYER_SWITCH_OFF=1` keeps them all.
-- **Neural Rendering VR:** DLSS 5 runs once, in the host, with fixed or eye-tracked foveation.
 - Extension functions are offered only when the real runtime has them, so feature checks are
   honest.
 - D3D12 and Vulkan games get NT shared handles, which their drivers support; D3D11 and OpenGL
